@@ -1,0 +1,18 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+#combo_entry {
+    width: 80%;
+    height: 140px;
+    color: white;
+    background-color: black;
+    border-color: blue;
+    font-size: 1.2em;
+}
+
+#translated_combo {
+    white-space: pre-wrap;
+    line-height: 2em;
+}
