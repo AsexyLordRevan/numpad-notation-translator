@@ -4,45 +4,39 @@ let translatedCombo = document.getElementById("translated_combo");
 comboEntry.oninput = translateCombo;
 
 function translateCombo() {
-    //Translate combo into bombo
-    //TODO: add button icons for babies
     let result = comboEntry.value;
 
     result = result.replace(/ADC/gm, "airdash cancel ");
-    result = result.replace(/AD/gm, "airdash ");
+    result = result.replace(/adc/gm, "airdash cancel ");
+    result = result.replace(/JC/gm, "jump cancel");
+    result = result.replace(/jc/gm, "jump cancel");
+    result = result.replace(/HJC/gm, "high jump cancel");
+    result = result.replace(/hjc/gm, "high jump cancel");
+    result = result.replace(/DC/gm, "dash cancel");
+    result = result.replace(/dc/gm, "dash cancel");
+    result = result.replace(/k/gm, "dash cancel");
 
-    result = result.replace(/j(?=[a-zA-Z][a-zA-Z]|\d{1,3})/gm, "jumping ");
-    result = result.replace(/2(?=[a-zA-Z][a-zA-Z])/gm, "crouching ");
-    result = result.replace(/5(?=[a-zA-Z][a-zA-Z])/gm, "standing ");
-    result = result.replace(/236(?=[a-zA-Z][a-zA-Z])/gm, "quarter circle forward ");
-    result = result.replace(/214(?=[a-zA-Z][a-zA-Z])/gm, "quarter circle back ");
+    result = result.replace(/1(?=[a-zA-Z][a-zA-Z])/gm, "󰁂");
+    result = result.replace(/2(?=[a-zA-Z][a-zA-Z])/gm, "󰁅");
+    result = result.replace(/3(?=[a-zA-Z][a-zA-Z])/gm, "󰁃");
+    result = result.replace(/4(?=[a-zA-Z][a-zA-Z])/gm, "󰁍");
+    result = result.replace(/5(?=[a-zA-Z][a-zA-Z])/gm, "󰁅");
+    result = result.replace(/6(?=[a-zA-Z][a-zA-Z])/gm, "󰁍");
+    result = result.replace(/7(?=[a-zA-Z][a-zA-Z])/gm, "󰁛");
+    result = result.replace(/8(?=[a-zA-Z][a-zA-Z])/gm, "󰁝");
+    result = result.replace(/9(?=[a-zA-Z][a-zA-Z])/gm, "󰁜");
+
+    result = result.replace(/A/gm, "󰯬");
+    result = result.replace(/B/gm, "󰯯");
+    result = result.replace(/C/gm, "󰯲");
+    result = result.replace(/D/gm, "󰯵");
+
+    result = result.replace(/P/gm, "󰰙");
+    result = result.replace(/K/gm, "󰰊");
+    result = result.replace(/S/gm, "󰰢");
+    result = result.replace(/H/gm, "󰰁");
+    result = result.replace(/D/gm, "󰯵");
     
-    result = result.replace(/L/gm, "light ");
-    result = result.replace(/M/gm, "medium ");
-    result = result.replace(/H/gm, "hard ");
-
-    result = result.replace(/PP/gm, "2 punches ");
-    result = result.replace(/KK/gm, "2 kicks ");
-
-    result = result.replace(/P(?!P)/gm, "punch ");
-    result = result.replace(/K(?!K)/gm, "kick ");
-
-    result = result.replace(/\((\d)\)/gm, "(hit $1 times) ");
-
-    result = result.replace(/(?<![a-zA-Z])([a-zA-Z])(?=[a-zA-Z]*)/gm, 
-    function(letter) {
-        return letter.toUpperCase();
-    });
-    /*const inputArray = comboEntry.value.split(" ");
-    for (let i = 0; i < inputArray.length; i++) {
-        let translatedMove = inputArray[i];
-        translatedMove.replace(/j/gm, "jumping ");
-        translatedMove.replace(/2/gi, "crouching ");
-        translatedMove.replace(/5/gi, "standing ");
-        //TODO: keep newlines
-        result += translatedMove + " ";
-    }*/
-
     translatedCombo.textContent = result;
 }
 
