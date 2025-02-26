@@ -10,8 +10,8 @@ function translateCombo() {
     result = result.replace(/adc/gm, "airdash cancel ");
     result = result.replace(/JC/gm, "jump cancel");
     result = result.replace(/jc/gm, "jump cancel");
-    result = result.replace(/HJC/gm, "high jump cancel");
-    result = result.replace(/hjc/gm, "high jump cancel");
+    result = result.replace(/HJC/gm, " high");
+    result = result.replace(/h/gm, " high");
     result = result.replace(/DC/gm, "dash cancel");
     result = result.replace(/dc/gm, "dash cancel");
     result = result.replace(/k/gm, "dash cancel");
