@@ -14,5 +14,6 @@ body {
 
 #translated_combo {
     white-space: pre-wrap;
+    font: "MesloLG Nerd Font"
     line-height: 2em;
 }
