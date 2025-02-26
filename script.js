@@ -16,15 +16,15 @@ function translateCombo() {
     result = result.replace(/dc/gm, "dash cancel");
     result = result.replace(/k/gm, "dash cancel");
 
-    result = result.replace(/1(?=[a-zA-Z][a-zA-Z])/gm, "󰁂");
-    result = result.replace(/2(?=[a-zA-Z][a-zA-Z])/gm, "󰁅");
-    result = result.replace(/3(?=[a-zA-Z][a-zA-Z])/gm, "󰁃");
-    result = result.replace(/4(?=[a-zA-Z][a-zA-Z])/gm, "󰁍");
-    result = result.replace(/5(?=[a-zA-Z][a-zA-Z])/gm, "󰁅");
-    result = result.replace(/6(?=[a-zA-Z][a-zA-Z])/gm, "󰁍");
-    result = result.replace(/7(?=[a-zA-Z][a-zA-Z])/gm, "󰁛");
-    result = result.replace(/8(?=[a-zA-Z][a-zA-Z])/gm, "󰁝");
-    result = result.replace(/9(?=[a-zA-Z][a-zA-Z])/gm, "󰁜");
+    result = result.replace(/1/gm, "󰁂");
+    result = result.replace(/2/gm, "󰁅");
+    result = result.replace(/3/gm, "󰁃");
+    result = result.replace(/4/gm, "󰁍");
+    result = result.replace(/5/gm, "󰁅");
+    result = result.replace(/6/gm, "󰁍");
+    result = result.replace(/7/gm, "󰁛");
+    result = result.replace(/8/gm, "󰁝");
+    result = result.replace(/9/gm, "󰁜");
 
     result = result.replace(/A/gm, "󰯬");
     result = result.replace(/B/gm, "󰯯");
